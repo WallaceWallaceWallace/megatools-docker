@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  mega:
+    build: .
+    command: mega...something you want here --path /myfiles
+    volumes:
+      - ./megarc:/.megarc
+      - ./:/myfiles
